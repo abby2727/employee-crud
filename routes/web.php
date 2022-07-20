@@ -11,7 +11,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 // EmployeeController
 Route::get('employee', [EmployeeController::class, 'index']);
